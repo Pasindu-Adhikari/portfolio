@@ -1,6 +1,7 @@
 import React, { Children, memo } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Pasindu from '../assets/pasindu.jpg';
 const AboutMe = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -41,7 +42,7 @@ const AboutMe = () => {
             <motion.div variants={itemVariants} className="md:w-1/3">
               <div className="relative">
                 <div className="absolute -inset-2 bg-teal-400/20 rounded-lg blur-lg"></div>
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Profile" className="w-full h-auto rounded-lg relative z-10 object-cover aspect-square" />
+                <img src={Pasindu} alt="Profile" className="w-full h-auto rounded-lg relative z-10 object-cover aspect-square" />
               </div>
             </motion.div>
             <motion.div variants={itemVariants} className="md:w-2/3">
